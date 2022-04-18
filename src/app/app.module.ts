@@ -9,6 +9,8 @@ import { MyPortfolioComponent } from './my-portfolio/my-portfolio.component';
 import { MyReposComponent } from './my-repos/my-repos.component';
 import { PortfoliosComponent } from './portfolios/portfolios.component';
 import { RespositoriesComponent } from './respositories/respositories.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { RespositoriesComponent } from './respositories/respositories.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    HttpClientModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
