@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Inspiration&family=Manrope:wght@600&family=Rubik+Moonrocks&family=Source+Serif+Pro&display=swap');
+.d-flex{
+    font-family: 'Rubik Moonrocks', cursive;
+    color: rgb(253, 255, 127);
+}
+.d-flex a{
+    color: rgb(27, 2, 2);
+    font-size: x-large;
+}
+.navbar-brand{
+    font-family: 'Akronim', cursive;
+    font-size: x-large;
+    color: rgb(29, 2, 29);
+}
