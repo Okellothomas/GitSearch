@@ -1,0 +1,16 @@
+body{
+   }
+.container{
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgb(0,0,0,0.5)),url('/assets/background/backgit.jpg');
+    color: white;
+}
+img{
+    margin-top: 3%;
+    border: 2px solid rgb(134, 172, 65);
+    border-radius: 50%;
+}
+a{
+    border-radius: 70%;
+    color: aqua;
+}

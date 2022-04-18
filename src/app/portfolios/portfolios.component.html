@@ -1,1 +1,21 @@
-<p>portfolios works!</p>
+<div class="container">
+    <div class="row">
+        <form class="d-flex" (ngSubmit)="searchUserName()">
+            <input class="form-control me-2" type="search" [(ngModel)]="gitUserName" name="username" #username='ngModel' placeholder="Enter Username" aria-label="Search">
+            <button class="btn btn-outline-danger" type="submit">Search</button>
+        </form>
+        
+        <div class="container">
+            <div class="col" [(ngModel)]="gitPortfolio" name="username">
+                    <img [src]="gitPortfolio.avatar_url" alt="" class="img-fluid">
+                    <div class="card-body">
+                        <h3>{{gitPortfolio.name}}</h3>
+                        <p>{{gitPortfolio.bio}}</p>
+                        <a [href]="gitPortfolio.html_url" class="btn btn-outline-danger">Explore More</a>
+                     </div> 
+        </div>
+        </div>
+    </div>
+</div>
+
+
