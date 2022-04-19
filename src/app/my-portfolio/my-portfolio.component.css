@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Inspiration&family=Manrope:wght@600&family=Rubik+Moonrocks&family=Source+Serif+Pro&display=swap');
+*{
+  
+        
+  
+        font-family: 'Akronim', cursive;
+     
+}
+.navbar{
+    margin-top: 3%;
+    text-align: center;
+    font-family: 'Akronim', cursive;
+}
+.container-fluid{
+    text-align: center;
+}
+.row{
+    text-align: center;
+}
+img{
+    margin-top: 3%;
+    border-radius: 60%;
+    border: 2px solid goldenrod;
+}
+h4{
+    font-family: 'Rubik Moonrocks', cursive;
+}

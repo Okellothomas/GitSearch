@@ -12,7 +12,7 @@
                         <h3>{{gitPortfolio.name}}</h3>
                         <p>{{gitPortfolio.bio}}</p>
                         <p>{{gitPortfolio.created_at |dateAgo}}</p> 
-                        <a [href]="gitPortfolio.html_url" class="btn btn-outline-danger">Explore More</a>
+                        <a *ngIf="gitPortfolio" [href]="gitPortfolio.html_url" class="btn btn-outline-danger">Explore More</a>
                      </div> 
            </div>
         </div>

@@ -1,2 +1,62 @@
-<p>my-portfolio works!</p>
+<nav>
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- <a class="navbar-brand" href="#">Git Search </a> -->
+   
+      <form style="text-align: center;" (ngSubmit)="searchName()">
+        <input class="form-control me-2" type="search" style="display: none;" [(ngModel)]="userName" name="username" #username='ngModel' placeholder="Enter Username" aria-label="Search">
+        <button class="btn btn-outline-danger" type="submit">View my Profile</button>
+      </form>
+    
+  </div>
+
+</nav>
+
+
+<div class="row">
+  <div class="col-12" [(ngModel)]="githubprofile" name="username">
+    <!-- {{githubprofile | json}} -->
+    <img *ngIf="githubprofile" [src]="githubprofile.avatar_url" alt="" class="img-fluid">
+    <!-- {{githubrepos}} -->
+  
+      <h3>{{githubprofile.name}}</h3>
+      <p>{{githubprofile.bio}}</p>
+      <p>{{githubprofile.public_repos}} Repositories</p>
+      <a *ngIf="githubprofile" [href]="githubprofile.html_url" class="btn btn-outline-danger">Profile</a>
+
+
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+        <div  *ngIf="githubrepos">
+          <h4>Github Respositories</h4>
+            <ul class="list-group">
+                <li *ngFor="let repo of githubrepos">
+                  <h4>{{repo.name}}</h4>
+                  <p >{{repo.description}}</p>
+                  <p>{{repo.language}}</p>
+                  <p>{{repo.pushed_at|dateAgo}}</p>
+                  <a [href]="repo.html_url" class="btn btn-outline-danger">Explore More</a>
+                </li>
+            </ul> 
+        </div>
+    </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
 <app-my-repos></app-my-repos>
