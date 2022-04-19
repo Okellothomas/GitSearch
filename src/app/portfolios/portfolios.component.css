@@ -1,6 +1,6 @@
 body{
    }
-.container{
+.container-fluid{
     text-align: center;
     background-image: linear-gradient(rgba(0,0,0,0.9),rgb(0,0,0,0.5)),url('/assets/background/backgit.jpg');
     color: white;
@@ -13,4 +13,10 @@ img{
 a{
     border-radius: 70%;
     color: aqua;
+}
+.d-flex{
+    
+    margin-top: 3%;
+    width: 60vh;
+    margin-left: 33%;
 }

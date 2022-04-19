@@ -28,7 +28,7 @@
       <h3>{{githubprofile.name}}</h3>
       <p>{{githubprofile.bio}}</p>
       <p>{{githubprofile.public_repos}} Repositories</p>
-      <a style="margin-bottom: 1.5%;" *ngIf="githubprofile" [href]="githubprofile.html_url" class="btn btn-outline-danger">Profile</a>
+      <a style="margin-bottom: 1.5%;" *ngIf="githubprofile" [href]="githubprofile.html_url" class="btn btn-outline-danger">explore More</a>
   </div>
 </div>
 </div>
@@ -39,8 +39,8 @@
   <div class="row">
     <div class="col">
         <div  *ngIf="githubrepos">
-          <h4>Github Respositories</h4>
-          <hr style="color: green;">
+          <h4 style="margin-top: 1%;">My Github Respositories</h4>
+          <hr style="color: rgb(128, 109, 0);">
             <ul class="list-group">
                 <li *ngFor="let repo of githubrepos">
                   <h4>{{repo.name}}</h4>
