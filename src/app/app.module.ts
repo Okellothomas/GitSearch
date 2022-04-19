@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule, approutings} from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { TimeCountPipe } from './time-count.pipe';
+import { TimeAgoPipe } from './time-count.pipe';
 import { MyPortfolioComponent } from './my-portfolio/my-portfolio.component';
 import { MyReposComponent } from './my-repos/my-repos.component';
 import { PortfoliosComponent } from './portfolios/portfolios.component';
@@ -16,7 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     NavbarComponent,
-    TimeCountPipe,
+    TimeAgoPipe,
     MyPortfolioComponent,
     MyReposComponent,
     PortfoliosComponent,

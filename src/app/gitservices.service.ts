@@ -37,7 +37,15 @@ export class GitservicesService {
     );
   }
 
-  public userReposInfo(userInfo:any):Observable<any[]>{
+  public userReposInfo(userInfo:any):Observable<any>{
+    let userProfileData = `https://api.github.com/users/${userInfo}/repos?client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}`;
+
+    return this._http.get<any>(userProfileData).pipe(
+      retry(1),
+    );
+  }
+
+  public userReposInfos(userInfo:any):Observable<any[]>{
     let userProfileData = `https://api.github.com/users/${userInfo}/repos?client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}`;
 
     return this._http.get<any[]>(userProfileData).pipe(
