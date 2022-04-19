@@ -1,0 +1,11 @@
+.footer{
+    text-align: center;
+    background-color: rgb(136, 130, 130);
+    border-radius: 80%;
+}
+.footer img{
+    height: 30px;
+    width: 30px;
+    border: 1.5px solid white;
+    border-radius: 50%;
+}
