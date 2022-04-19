@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Akronim&family=Inspiration&family=Manrope:wght@600&family=Rubik+Moonrocks&family=Source+Serif+Pro&display=swap');
-.container{
+.container-fluid{
     text-align: center;
     background-image: linear-gradient(rgba(0,0,0,0.9),rgb(0,0,0,0.5)),url('/assets/background/background.jpg');
     color: white;
@@ -15,4 +15,10 @@ a{
 }
 h4{
     font-family: 'Rubik Moonrocks', cursive;
+}
+.d-flex{
+    margin-top: 2%;
+    margin-left: 35%;
+    width: 60vh;
+    margin-bottom: 2%;
 }
