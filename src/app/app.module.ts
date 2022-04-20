@@ -12,7 +12,7 @@ import { RespositoriesComponent } from './respositories/respositories.component'
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
-import { RepositoriesComponent } from './repositories/repositories.component';
+
 
 @NgModule({
   declarations: [
@@ -24,8 +24,7 @@ import { RepositoriesComponent } from './repositories/repositories.component';
     PortfoliosComponent,
     RespositoriesComponent,
     approutings,
-    FooterComponent,
-    RepositoriesComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
