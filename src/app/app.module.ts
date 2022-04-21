@@ -12,6 +12,7 @@ import { RespositoriesComponent } from './respositories/respositories.component'
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
+import { ColorsDirective } from './colors.directive';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { FooterComponent } from './footer/footer.component';
     PortfoliosComponent,
     RespositoriesComponent,
     approutings,
-    FooterComponent
+    FooterComponent,
+    ColorsDirective
   ],
   imports: [
     BrowserModule,

@@ -1,12 +1,11 @@
 <div class="container-fluid">
     <div class="row">
-        <form class="d-flex" (ngSubmit)="searchRepoName()">
+        <form class="d-flex" (ngSubmit)="searchRepoName()" appColors>
             <input class="form-control me-2" type="search" [(ngModel)]="gitRepoName" name="username" #username='ngModel' placeholder="Enter Username" aria-label="Search">
             <button class="btn btn-outline-danger" type="submit">Search</button>
         </form>
         
-        <div class="container">
-            <li *ngFor="let repo of gitRepo">
+        <div class="container">            <li *ngFor="let repo of gitRepo">
                 <h4>{{repo.name}}</h4>
                 <p >{{repo.description}}</p>
                 <p>{{repo.language}}</p>

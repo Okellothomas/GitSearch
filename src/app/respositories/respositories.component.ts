@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GitservicesService } from '../gitservices.service';
+import { Repos } from '../repos';
 
 @Component({
   selector: 'app-respositories',
@@ -7,13 +8,14 @@ import { GitservicesService } from '../gitservices.service';
   styleUrls: ['./respositories.component.css']
 })
 export class RespositoriesComponent implements OnInit {
+  
+  repo!:Repos;
+  gitRepoName!:string;
+  gitPortfolio!:any;
+  gitRepos!:any;
+  gitRepo!:any[];
+  errorMessage!:string;
 
- // searching my porfolios.
- public gitRepoName!:string;
- public gitPortfolio!:any;
- public gitRepos!: any;
- public gitRepo!: any[];
- public errorMessage!:string;
 
  constructor( private gitSearch:GitservicesService) { }
 
